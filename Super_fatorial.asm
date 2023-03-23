@@ -1,5 +1,12 @@
+#Rodrigo de jesus Macedo
+
+
+main:
 #loop 1 o $t0 será o valoor da super fatorial 
 li $t0, 5
+
+#while principal
+li $k0, 0
 
 #loop 2
 li $t1, 0
@@ -15,16 +22,23 @@ li $t5, 1
 #soma
 li $s0, 0
 li $s1, 1#soma inicial - referencia da soma
+li $s3, 0 #RSULTADO FINAL
 
 #copia soma
 li $t4, 0
 
+#referencia base
+move	$k0, $t0
 
-main:
+while:
+	beq $k0, $k1, end
 
+	#Referencias 
+	move $t0, $k0
 	move $s0, $t0
+	
 	loop:
-		beq $t0, $k1, end
+		beq $t0, $k1, end2
 
 		#duplcação
 		move $t2, $t0
@@ -55,4 +69,11 @@ main:
 		#subitração para o loop1
 		subi $t0, $t0, 1
 		b loop
-	end:
+	end2:
+	
+	#RESULTADO FINAL DA SUPER FATORIAL
+	add $s3, $s3, $s0
+	
+	subi $k0, $k0, 1
+	b while
+end:	
