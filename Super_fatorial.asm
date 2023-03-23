@@ -3,7 +3,7 @@
 
 main:
 #loop 1 o $t0 será o valoor da super fatorial 
-li $t0, 5
+li $t0, 4
 
 #while principal
 li $k0, 0
@@ -48,7 +48,6 @@ while:
 		
 		#fat
 		move $t3, $t2
-		subi $t3, $t3, 0
 
 		#Criando a soma
 		move $s1, $s0
@@ -71,9 +70,21 @@ while:
 		b loop
 	end2:
 	
-	#RESULTADO FINAL DA SUPER FATORIAL
-	add $s3, $s3, $s0
-	
+	#Referencia do último produto
+	move $s4, $s3
+	addi $s4, $s4, 2
+	move $s5, $s0
+
+		#produto final
+		loop4:
+			beq $s4, $k1, end4
+			add $s3, $s3, $s5
+
+			#subitração do loop
+			subi $s4, $s4, 1
+			b loop4
+		end4:
+			
 	subi $k0, $k0, 1
 	b while
 end:	
