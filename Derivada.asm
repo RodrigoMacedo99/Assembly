@@ -1,3 +1,5 @@
+#CPU pipeline-extended.cpu
+
 # definir os valores de x
 mov eax, 2 ; x = 2
 
