@@ -19,12 +19,12 @@
 #=============================================================================
 
 #Criando o vetor onde serão inseridos os valores da derivada
-.data 
-	array: .space 24		
-.text
+#.data 
+#	array: .space 24		
+#.text
 
 #caminho de inicialização das derivadas
-move $t0, $zero
+#move $t0, $zero
 
 #valores da derivada
 li $s0, 3
@@ -42,17 +42,17 @@ li $k0, 1
 li $v0, 0
 
 #Inserindo os valores da derivada no array
-sw $t0, array($s0) #Primeira posição
-	addi $t0, $t0, 4
-sw $t0, array($s1) #Segunda posição
-	addi $t0, $t0, 4
-sw $t0, array($s2) #Terceira posição
-	addi $t0, $t0, 4
-sw $t0, array($s3) #Quarta posição
-	addi $t0, $t0, 4
-sw $t0, array($s4) #Quinta Posição
-	addi $t0, $t0, 4
-sw $t0, array($s5) #Sexta posição
+#sw $t0, array($s0) #Primeira posição
+#	addi $t0, $t0, 4
+#sw $t0, array($s1) #Segunda posição
+#	addi $t0, $t0, 4
+#sw $t0, array($s2) #Terceira posição
+#	addi $t0, $t0, 4
+#sw $t0, array($s3) #Quarta posição
+#	addi $t0, $t0, 4
+#sw $t0, array($s4) #Quinta Posição
+#	addi $t0, $t0, 4
+#sw $t0, array($s5) #Sexta posição
 
 loop1:
 	beq $s5, $k1, end1
