@@ -2,7 +2,7 @@
 #                           NOMES DA EQUIPE
 
 # -> Rodrigo de Jesus Macedo
-# ->
+# ->	Lucas Lago Silva Bastos
 # ->
 # ->
 #=============================================================================
