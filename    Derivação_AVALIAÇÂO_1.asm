@@ -1,8 +1,25 @@
-#Rodrigo de Jesus Macedo
-#AVALIAÇÃO DE ARQUITETURA DE COMPUTADORES
+#=============================================================================
+#                           NOMES DA EQUIPE
+
+# -> Rodrigo de Jesus Macedo
+# ->
+# ->
+# ->
+#=============================================================================
+#                  ORIENTAÇÕES PARA ENTENDER O CÓDIGO
+
+# Derivada resolvida no código h(x) = 3x + 5x² +6x³.
+
+# Abaixo mostrará em que registradores estarão os respectivos valores:
+#  $s0 = 3 | $s1 = x
+#  $s2 = 5 | $s3 = x²
+#  $s4 = 6 | $s5 = x³
+
+#                     RESULTADO FINAL: $s4 = 36
+#=============================================================================
 
 #Criando o vetor onde serão inseridos os valores da derivada
-.data
+.data 
 	array: .space 24		
 .text
 
@@ -54,13 +71,3 @@ loop1:
 		
 	b loop1
 end1:
-
-
-
-
-
-
-
-
-
-
