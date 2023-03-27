@@ -3,8 +3,6 @@
 
 # -> Rodrigo de Jesus Macedo
 # ->	Lucas Lago Silva Bastos
-# ->
-# ->
 #=============================================================================
 #                  ORIENTAÇÕES PARA ENTENDER O CÓDIGO
 
