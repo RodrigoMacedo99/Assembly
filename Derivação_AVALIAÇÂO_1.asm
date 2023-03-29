@@ -3,6 +3,7 @@
 
 # -> Rodrigo de Jesus Macedo
 # ->	Lucas Lago Silva Bastos
+# -> José Henrique Ramos de Andrade
 #=============================================================================
 #                  ORIENTAÇÕES PARA ENTENDER O CÓDIGO
 
